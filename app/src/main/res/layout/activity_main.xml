@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/spinnerInstitution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/listViewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerInstitution" />
+
+    <EditText
+        android:id="@+id/editTextClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome da Aula"
+        android:layout_below="@id/listViewSchedule"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextClassTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horário da Aula"
+        android:layout_below="@id/editTextClassName"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAddClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Aula"
+        android:layout_below="@id/editTextClassTime"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:layout_below="@id/buttonAddClass"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
